@@ -1,4 +1,4 @@
-drawer = 20;
+drawer = 18;
 hook = 100;
 width = 10;
 anker = 10;
