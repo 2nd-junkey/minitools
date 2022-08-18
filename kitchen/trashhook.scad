@@ -5,6 +5,8 @@ anker = 10;
 ram = 10;
 thin = 2;
 
+pier = hook*2/3;
+
 hook(drawer, anker, width, thin);
 bridge(hook, width, ram, thin);
 
@@ -37,10 +39,10 @@ module bridge(hook, width, ram, thin)
             linear_extrude(height=width)
             {
                 difference(){
-                    polygon([[0, 0], [hook, 0], [0, -hook]]);
+                    polygon([[0, 0], [pier, 0], [0, -hook]]);
                     offset(r = -thin)
                     {
-                                    polygon([[0, 0], [hook, 0], [0, -hook]]);
+                                    polygon([[0, 0], [pier, 0], [0, -hook]]);
                     }
                 }
             }
